@@ -1,0 +1,83 @@
+/* Custom CSS to complement Bootstrap */
+:root {
+  --primary-color: #0d6efd;   /* Bootstrap primary color */
+  --secondary-color: #6c757d; /* Bootstrap secondary color */
+}
+
+body {
+  background-color: #f8f9fa;
+  font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+}
+
+/* Custom navbar styling (if using) */
+.navbar-custom {
+  background-color: var(--primary-color) !important;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.navbar-custom .navbar-brand {
+  color: white !important;
+  font-weight: 600;
+}
+
+/* Enhanced form controls */
+.form-control:focus {
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+}
+
+/* Custom button styling */
+.btn-custom {
+  border-radius: 25px;
+  padding: 0.5rem 1.75rem;
+  transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+/* Spacing utilities */
+.mt-6 {
+  margin-top: 4rem !important;
+}
+
+.mb-6 {
+  margin-bottom: 4rem !important;
+}
+
+/* Custom card styling */
+.card-hover {
+  transition: transform 0.3s ease;
+}
+
+.card-hover:hover {
+  transform: translateY(-5px);
+}
+
+/* Link styling */
+a {
+  text-decoration: none;
+  color: var(--primary-color);
+}
+
+a:hover {
+  color: #0b5ed7;
+  text-decoration: underline;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .display-4 {
+    font-size: 2.5rem;
+  }
+  
+  .lead {
+    font-size: 1rem;
+  }
+  
+  .mt-6 {
+    margin-top: 2rem !important;
+  }
+}
