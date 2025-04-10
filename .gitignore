@@ -34,3 +34,17 @@
 # Java
 *.class
 *.jar
+
+# Python virtual environment
+venv/
+ENV/
+env/
+.venv/
+
+# Flask specific files
+instance/
+*.pyc
+*.pyo
+__pycache__/
+*.log
+*.sqlite3
