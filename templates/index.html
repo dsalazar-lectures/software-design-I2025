@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Prueba Boostrap
+    </title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <style>
+        body {
+            background-color:#e0e0e0;
+        }
+
+        h1 {
+            color: darkgoldenrod;
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        p {
+            font-size: x-large;
+            font-weight: 100;
+            text-align: center;
+        }
+
+        .boton-neumorfico {
+            background-color: #e0e0e0;
+            border: none;
+            border-radius: 12px;
+            box-shadow: 
+                7px 7px 16px #bebebe,
+                -7px -7px 16px #ffffff;
+            cursor: pointer;
+            transition: all 0.1s ease;
+        }
+
+        .boton-neumorfico:active {
+            box-shadow: 
+                inset 7px 7px 16px #bebebe,
+                inset -7px -7px 16px #ffffff;
+            
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row m-2">
+            <div class="col-md-12"><h1>¡Hola, soy Chino!</h1></div>
+        </div>
+        <div class="row m-2">
+            <div class="col-md-12"><p>Esta es una prueba de concepto con Boostrap</p></div>
+        </div>
+        <div class="row m-2">
+            <div class="col-md-12 d-flex justify-content-center">
+                <a href="{{ url_for('grade') }}">
+                    <button class="boton-neumorfico">Dar 110 en la nota</button>
+                </a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
