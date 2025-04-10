@@ -1,0 +1,43 @@
+* {
+    margin: 10px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+:root {
+    --text-color:#ffff;
+}
+
+.card {
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.644);
+    box-shadow: 0 2px 4px dodgerblue, 0 8px 16px dodgerblue;
+    backdrop-filter: blur(10px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card h1 {
+    padding-top: 20px;
+    color: var(--text-color);
+    font-size: 2rem;
+    font-weight: 500;
+}
+.card p {
+    color: var(--text-color);
+    font-size: 1rem;
+    font-weight: 300;
+}
+.btn {
+    width: 35%;
+    background-color:transparent;
+    border-color: dodgerblue;
+    color: grey;
+    border-radius: 20px;
+    transition: 0.3s ease;
+}
+.btn:hover {
+    color: var(--text-color);
+    background-color: dodgerblue;
+    transform: scale(1.05);
+}
+
