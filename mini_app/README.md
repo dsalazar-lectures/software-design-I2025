@@ -32,4 +32,7 @@ Type this URL:
 
 Or introduce your name to be greeted by the app:
 
-> Or <http://127.0.0.1:5000\\\<name>
+> http://127.0.0.1:5000/your_name_here
+
+Replace `your_name_here` with your actual name to see a personalized greeting from the app.
+
