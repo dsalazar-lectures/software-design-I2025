@@ -34,3 +34,6 @@
 # Java
 *.class
 *.jar
+
+# Python
+venv/
