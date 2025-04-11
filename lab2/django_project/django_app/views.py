@@ -1,6 +1,7 @@
 from django.shortcuts import render
 from django.http import HttpRequest, HttpResponse
+from django.template  import loader
 
 def saludo(request: HttpRequest) -> HttpResponse:
-        estudiante = "Gabriel Serrano Rojas"
-        return HttpResponse(f"Estudiante: {estudiante}. Esta es mi versión esqueleto del proyecto.")
+        template = loader.get_template("saludo.html")
+        return HttpResponse(template.render())
