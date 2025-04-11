@@ -2,17 +2,100 @@
 <html>
 <head>
     <title>Hello World</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #f8f9fa;
+            transition: all 0.5s ease;
+        }
+        .hello-world {
+            width: 100%;
+            transition: all 0.5s ease;
+        }
+        .broken {
+            transform: rotate(180deg);
+            background-color: #ff0000 !important;
+            color: yellow !important;
+            font-family: "Comic Sans MS", cursive !important;
+        }
+        .broken h1 {
+            transform: rotate(180deg);
+            font-size: 3rem !important;
+            color: #00ff00 !important;
+        }
+        .broken p {
+            transform: rotate(180deg);
+            font-size: 2rem !important;
+            color: #0000ff !important;
+        }
+        .broken button {
+            transform: rotate(180deg) scale(2);
+            background-color: purple !important;
+            border: 5px solid yellow !important;
+        }
+    </style>
 </head>
 <body>
-    <div class="hello-world">
-        <h1>Hola, soy Aaron</h1>
-        <p>
-            Este es mi servidor con Flask
-        </p>
-
-        <button>
-            No haz click aqui
-        </button>
+    <div class="container">
+        <div class="hello-world card shadow">
+            <div class="card-body text-center p-5">
+                <h1 class="card-title mb-4">Hola, soy Aaron</h1>
+                <p class="card-text mb-4">
+                    Este es mi servidor con Flask
+                </p>
+                <button class="btn btn-primary">
+                    No hagas click aqui
+                </button>
+            </div>
+        </div>
     </div>
+
+    <!-- Bootstrap JS Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        document.querySelector('button').addEventListener('click', function() {
+            const card = document.querySelector('.hello-world');
+            const body = document.querySelector('body');
+            
+            // Toggle broken class
+            card.classList.toggle('broken');
+            body.classList.toggle('broken');
+            
+            // Add some chaotic effects
+            if (card.classList.contains('broken')) {
+                // Random colors
+                document.body.style.backgroundColor = `rgb(${Math.random() * 255}, ${Math.random() * 255}, ${Math.random() * 255})`;
+                
+                // Random rotation
+                const rotation = Math.random() * 360;
+                card.style.transform = `rotate(${rotation}deg)`;
+                
+                // Random position
+                const x = Math.random() * 100;
+                const y = Math.random() * 100;
+                card.style.position = 'absolute';
+                card.style.left = `${x}%`;
+                card.style.top = `${y}%`;
+                
+                // Add some random text
+                const texts = ['¡AYUDA!', 'SOS', 'ERROR', '404', '¡UPS!'];
+                const randomText = texts[Math.floor(Math.random() * texts.length)];
+                document.querySelector('h1').textContent = randomText;
+            } else {
+                // Reset styles
+                card.style.transform = '';
+                card.style.position = '';
+                card.style.left = '';
+                card.style.top = '';
+                document.querySelector('h1').textContent = 'Hola, soy Aaron';
+                document.body.style.backgroundColor = '#f8f9fa';
+            }
+        });
+    </script>
 </body>
-</html> 
+</html> p
