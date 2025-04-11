@@ -16,8 +16,13 @@ Including another URLconf
 """
 
 from django.contrib import admin
-from django.urls import path
+from django.urls import include, path, re_path
+from django.views.generic import RedirectView
 
 urlpatterns = [
     path("admin/", admin.site.urls),
-]
+    path("JPage/", include("JPage.urls")),
+    path("",RedirectView.as_view(url="/JPage/", permanent=True)),
+    # Redirect any other URL to the JPage app
+    re_path(r"^.*$", RedirectView.as_view(url="/JPage/", permanent=False)),
+] 
