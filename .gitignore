@@ -34,3 +34,10 @@
 # Java
 *.class
 *.jar
+
+# Python environment
+.venv/
+
+# Python cache
+__pycache__/
+
