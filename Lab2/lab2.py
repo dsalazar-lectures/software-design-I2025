@@ -1,6 +1,6 @@
 from flask import Flask, render_template
 
-app = Flask(__name__) # __name__ es para identificar donde esta el archivo principal
+app = Flask(__name__) 
 
 @app.route('/')
 def home():
