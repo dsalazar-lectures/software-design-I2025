@@ -1,13 +1,43 @@
 <!--templates/home.html-->
-<!DOCTYPE html-->
+<!DOCTYPE html>
 <html>
-    <head>
-        <title>
-            Esta es mi primera pagina web
-        </title>
-    </head>
-    <body>
-        <h1 style="color: rgb(90, 161, 90);">¡Hola soy Rolbin y esta es mi primera pagina web!</h1>
-        
-    </body>
+<head>
+    <title>Lab2_Rolbin</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            background: linear-gradient(to bottom right, #87CEFA, #f0f8ff);
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: #333;
+        }
+
+        h1 {
+            text-shadow: 2px 2px 5px #aaa;
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: #ff6961;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #deff4c;
+        }
+    </style>
+</head>
+<body>
+    <h1>¡Hola soy Rolbin y esta es mi primera página web!</h1>
+    <a href="/secret"><button>No presionar</button></a>
+</body>
 </html>
