@@ -34,3 +34,18 @@
 # Java
 *.class
 *.jar
+
+# virtual environment
+env/
+.env/
+__pycache__/
+*.pyc
+
+venv
+.venv
+__pycache__/
+*.pyc
+
+
+# Archivos de configuración o secretos
+*.env
