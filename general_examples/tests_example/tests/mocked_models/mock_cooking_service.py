@@ -16,3 +16,7 @@ class MockCookingService(ICookingService):
 
     def get_cooking_state(self) -> str:
         return self.state
+    
+    def drop_cooking(self) -> str:
+        self.state = "dropped"
+        return "Cooking dropped"

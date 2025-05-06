@@ -9,3 +9,7 @@ class ICookingService(ABC):
     @abstractmethod
     def get_cooking_state(self) -> str:
         pass
+
+    @abstractmethod
+    def drop_cooking(self) -> str:
+        pass
