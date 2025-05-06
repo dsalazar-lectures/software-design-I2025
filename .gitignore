@@ -33,6 +33,7 @@
 
 # java
 *.class
+
 # Ignore virtual environments
 venv/
 env/
@@ -50,3 +51,8 @@ __pycache__/
 *.egg-info/
 dist/
 build/
+=======
+*.jar
+
+# Python
+venv/
