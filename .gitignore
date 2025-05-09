@@ -31,8 +31,27 @@
 *.out
 *.app
 
-# Java
+# java
 *.class
+
+# Ignore virtual environments
+venv/
+env/
+
+# Ignore Python bytecode/cache
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# Ignore other common Python artifacts
+*.log
+*.sqlite3
+*.db
+*.egg-info/
+dist/
+build/
+=======
 *.jar
 
 # Python
