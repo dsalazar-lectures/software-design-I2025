@@ -1,4 +1,4 @@
-@startuml
+@startuml CookingDiagram
 
 interface ICookingService {
     + cook_recipe(minutes: int): str
@@ -34,9 +34,15 @@ class AirFryerArtifact {
     + get_cooking_state(): str
 }
 
+class DummyArtifact {
+    + cook(minutes: int): str
+    + get_cooking_state(): str
+}
+
 ICookingService <|.. MockCookingService
 ICookingArtifact <|.. OvenArtifact
 ICookingArtifact <|.. AirFryerArtifact
+ICookingArtifact <|.. DummyArtifact
 Recipe o-- ICookingArtifact
 MockCookingService o-- Recipe
 
