@@ -5,8 +5,6 @@ class KnifeCutTool(IToolCut):
         print("KnifeCutTool initialized")
     
     def cut(self, minutes):
-        result = f"Cutting for {minutes} minutes with the knife."
-        
         return f"Cutting for {minutes} minutes with the knife."
     
     def get_cutting_state(self):
