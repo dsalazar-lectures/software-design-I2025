@@ -1,5 +1,6 @@
 from tests_example.app.slow_cooker_artifact import SlowCookerArtifact
 from tests_example.app.models.recipe import Recipe
+from unittest.mock import MagicMock
 
 def test_slow_cooker_cook():
     slow_cooker = SlowCookerArtifact()

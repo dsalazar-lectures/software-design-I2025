@@ -1,5 +1,7 @@
 from tests_example.app.models.recipe import Recipe
 from unittest.mock import MagicMock
+from tests_example.app.oven_cooking_artifact import OvenArtifact
+from tests_example.app.slow_cooker_artifact import SlowCookerArtifact
 
 def test_cook_all():
     mock_artifact1 = MagicMock()
@@ -30,3 +32,13 @@ def test_get_all_states():
     assert states == ["Ready", "Still cooking"]
     mock_artifact1.get_cooking_state.assert_called_once()
     mock_artifact2.get_cooking_state.assert_called_once()
+
+def test_recipe_with_multiple_artifacts():
+    oven = OvenArtifact()
+    slow_cooker = SlowCookerArtifact()
+    recipe = Recipe([oven, slow_cooker])
+    
+    results = recipe.cook_all(60)
+    assert results == [None, "Slow cooked for 60 min"]  # OvenArtifact no retorna valor
+    assert oven.get_cooking_state() == "cooked"
+    assert slow_cooker.get_cooking_state() == "cooked"
