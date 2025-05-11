@@ -8,4 +8,4 @@ class KnifeCutTool(IToolCut):
         return f"Cutting for {minutes} minutes with the knife."
     
     def get_cutting_state(self):
-        print("Getting cutting state from the knife.")
+        return f"Getting cutting state from the knife."
