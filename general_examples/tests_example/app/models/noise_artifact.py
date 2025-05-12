@@ -1,6 +1,7 @@
+from tests_example.app.i_cooking_artifact import ICookingArtifact
 import random
 
-class NoiseArtifact:
+class NoiseArtifact(ICookingArtifact):
     def cook(self, time):
         frases_ticas = [
             "¡Eso quedó como para chuparse los dedos!",
