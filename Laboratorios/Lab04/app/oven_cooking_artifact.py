@@ -1,9 +1,13 @@
-from tests_example.app.i_cooking_artifact import ICookingArtifact
+from Lab04.app.i_cooking_artifact import ICookingArtifact
 
 class OvenArtifact(ICookingArtifact):
     def __init__(self):
         print("OvenArtifact initialized")
         self.state = "new"
+
+    def preheat(self, temperature):
+        print(f"Preheating oven to {temperature}°C.")
+        self.state = "preheated"
 
     def cook(self, minutes):
         print(f"Cooking for {minutes} minutes in the oven.")

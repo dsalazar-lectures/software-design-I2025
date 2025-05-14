@@ -1,4 +1,4 @@
-from tests_example.app.i_cooking_artifact import ICookingArtifact
+from Lab04.app.i_cooking_artifact import ICookingArtifact
 
 class DummyArtifact(ICookingArtifact):
     def __init__(self):

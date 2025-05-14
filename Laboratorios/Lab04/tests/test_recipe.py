@@ -1,4 +1,4 @@
-from tests_example.app.models.recipe import Recipe
+from Lab04.app.models.recipe import Recipe
 from unittest.mock import MagicMock
 
 def test_cook_all():
