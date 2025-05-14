@@ -1,5 +1,5 @@
 import pytest
-from app.oven_cooking_artifact import OvenArtifact
+from ..app.oven_cooking_artifact import OvenArtifact
 
 def test_oven_initial_state():
     oven = OvenArtifact()
