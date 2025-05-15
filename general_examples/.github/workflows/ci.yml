@@ -4,7 +4,7 @@ on:
   push:
     branches: [user/DiegoCerdas/feature/lab4]
   pull_request:
-    branches: ['*']
+    branches: [main]
 
 jobs:
   test:
