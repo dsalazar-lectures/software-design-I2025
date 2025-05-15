@@ -2,9 +2,9 @@ name: Python CI
 
 on:
   push:
-    branches: [main, user/DiegoCerdas/feature/lab4]
+    branches: [user/DiegoCerdas/feature/lab4]
   pull_request:
-    branches: [main]
+    branches: ['*']
 
 jobs:
   test:
