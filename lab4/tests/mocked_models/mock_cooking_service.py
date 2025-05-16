@@ -1,7 +1,7 @@
-from tests_example.app.i_cooking_service import ICookingService
-from tests_example.app.i_cooking_artifact import ICookingArtifact
+from lab4.app.i_cooking_service import ICookingService
+from lab4.app.i_cooking_artifact import ICookingArtifact
 from typing import List
-from tests_example.app.models.recipe import Recipe
+from lab4.app.models.recipe import Recipe
 
 class MockCookingService(ICookingService):
     def __init__(self, recipe: Recipe):

@@ -1,5 +1,5 @@
 from abc import ABC, abstractmethod
-from tests_example.app.models.recipe import Recipe
+from lab4.app.models.recipe import Recipe
 
 class ICookingService(ABC):
     @abstractmethod

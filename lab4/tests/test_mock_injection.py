@@ -1,6 +1,6 @@
-from tests_example.app.models.recipe import Recipe
-from tests_example.app.oven_cooking_artifact import OvenArtifact
-from tests_example.tests.mocked_models.mock_cooking_service import MockCookingService
+from lab4.app.models.recipe import Recipe
+from lab4.app.oven_cooking_artifact import OvenArtifact
+from lab4.tests.mocked_models.mock_cooking_service import MockCookingService
 
 def test_recipe_with_mock_service():
     oven = OvenArtifact()

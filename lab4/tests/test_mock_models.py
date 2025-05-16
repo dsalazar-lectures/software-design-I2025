@@ -1,5 +1,5 @@
-from tests_example.app.models.recipe import Recipe
-from tests_example.tests.mocked_models.dummy_artifact import DummyArtifact
+from lab4.app.models.recipe import Recipe
+from lab4.tests.mocked_models.dummy_artifact import DummyArtifact
 
 def test_recipe_with_dummy_artifact():
     dummy = DummyArtifact()

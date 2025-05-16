@@ -1,4 +1,4 @@
-from tests_example.app.i_cooking_artifact import ICookingArtifact
+from lab4.app.i_cooking_artifact import ICookingArtifact
 
 class AirfryerArtifact(ICookingArtifact):
     def __init__(self):
