@@ -6,6 +6,7 @@ from tests_example.app.termometer_artifact import Termometer_Artifact
 def test_cook_sets_correct_status():
     artifact = Termometer_Artifact()
 
+
     artifact.cook(1)
     assert artifact.get_cooking_state() == "rare"
 
@@ -17,6 +18,6 @@ def test_cook_sets_correct_status():
 
     artifact.cook(6)
     assert artifact.get_cooking_state() == "well done"
-    
+
     artifact.cook(9)
     assert artifact.get_cooking_state() == "burned"
