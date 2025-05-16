@@ -2,6 +2,9 @@ name: Run Unit Tests
 
 on:
   push:
+    branches:
+      - main
+      - feature/lab4
   pull_request:
 
 jobs:
@@ -27,3 +30,4 @@ jobs:
       run: |
         source venv/bin/activate
         pytest tests
+
