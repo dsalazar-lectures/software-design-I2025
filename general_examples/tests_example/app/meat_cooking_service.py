@@ -15,7 +15,7 @@ class MeatCookingService(ICookingService):
     def __init__(self, recipe: Recipe):
         self.recipe = recipe
 
-    def cook_recipe(self, recipe:Recipe, minutes: int) -> str:
+    def cook_recipe(self, minutes: int) -> str:
         return self.recipe.cook_all(minutes);
 
     def get_cooking_state(self) -> str:
