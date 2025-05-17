@@ -9,5 +9,5 @@ class Kitchener:
     def cut_food(self, minutes: int) -> str:
         return self.ToolCut.cut(minutes)
 
-    def use_artifact(self, minutes: int) -> str:
+    def cook_food(self, minutes: int) -> str:
         return self.Artifact.cook(minutes)
