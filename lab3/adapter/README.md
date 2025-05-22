@@ -61,7 +61,6 @@ This project demonstrates the **Adapter Design Pattern** in Java.
 
 ```
 adapter/
-└── adapter/
 ├── Demo.java
 ├── round/
 │ ├── RoundHole.java
@@ -75,12 +74,12 @@ adapter/
 ### Compilation
 
 ```bash
-javac -d out lab3/adapter/**/*.java
+make
 ```
 
 ### Execution
 ```bash
-java -cp out adapter.Demo
+make run
 ```
 ### Output
 
@@ -95,25 +94,25 @@ This implementation is inspired by the official Adapter pattern example from Ref
 https://refactoring.guru/es/design-patterns/adapter/java/example
 
 ---
-## Ejemplo de un adapter en una situacion real:
-En un sistema web, por ejemplo una aplicación en React o Angular que consume múltiples APIs, cada una puede tener diferentes estructuras JSON. Si el frontend espera una estructura específica pero cada proveedor envía datos distintos, podríamos crear Adapters de datos en el backend (Node.js, Java, etc.) o incluso en el frontend para transformar los datos a un formato común antes de pasarlos a los componentes.
-Ejemplo concreto:
+## Example of an Adapter in a Real-World Scenario:
+In a web system—such as a React or Angular application that consumes multiple APIs—each API may return data in different JSON structures. If the frontend expects a specific structure but each provider sends data differently, we can create data adapters either in the backend (Node.js, Java, etc.) or even on the frontend to transform the data into a common format before passing it to the components.
 
-- **API A devuelve:**
+Concrete example:
+- **API A returns:**
 ```bash
 { 
   fullName: "Jorge Quiros", "email": "jorge@example.com" 
 }
 ```
 
-- **API B devuelve:**
+- **API B returns:**
 ```bash
 { 
   name: "Jorge", "surname": "Quiros", "contact": { "mail": "jorge@example.com" } 
 }
 ```
 
-- **Estructura esperada por la aplicación:**
+- **Expected structure by the application:**
 ```bash
 {
   fullName: "Jorge Quiros",
@@ -121,7 +120,7 @@ Ejemplo concreto:
 }
 ```
 
-- **Implemetación del adapter:**
+- **Adapter implementation:**
 ```bash
 function adaptUserFromApiB(data) {
   return 
