@@ -80,6 +80,13 @@ En lugar de crear un nuevo objeto Tutor para cada solicitud, podemos tener proto
 
 Este enfoque es especialmente útil en sistemas donde se crean muchas instancias similares, como las tutorías en una plataforma educativa.
 
+### Diagrama del Patrón Prototype
+
+A continuación, se presenta un diagrama que ilustra la implementación del patrón Prototype en este proyecto:
+
+![Diagrama del Patrón Prototype](Prototype_Diagrama_Ejemplo.png)
+
  ### Bibliografía 
  Geoks for Geeks. (2025). Prototype Design Pattern. https://www.geeksforgeeks.org/prototype-design-pattern/ 
  Shvets A. (2021). Sumérgete en los patrones de diseño.
+
