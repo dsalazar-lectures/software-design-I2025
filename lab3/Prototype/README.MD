@@ -86,7 +86,27 @@ A continuación, se presenta un diagrama que ilustra la implementación del patr
 
 ![Diagrama del Patrón Prototype](Prototype_Diagrama_Ejemplo.png)
 
+### Cómo ejecutar el proyecto Prototype
+
+Sigue los siguientes pasos para ejecutar este proyecto:
+
+
+1. **Ubícate en la carpeta `Prototype`**: Asegúrate de estar dentro de la carpeta `Prototype` antes de continuar.
+
+2. **Instala Python**: Asegúrate de tener Python 3.10 o superior instalado en tu sistema.
+
+3. **Ejecuta el programa**: Usa el siguiente comando para ejecutar el archivo principal del proyecto:
+
+   ```bash
+   python3 main.py
+   ```
+
+4. **Observa los resultados**: El programa mostrará en la consola cómo se implementa el patrón Prototype mediante la clonación de objetos.
+
+
  ### Bibliografía 
  Geoks for Geeks. (2025). Prototype Design Pattern. https://www.geeksforgeeks.org/prototype-design-pattern/ 
  Shvets A. (2021). Sumérgete en los patrones de diseño.
+
+
 
