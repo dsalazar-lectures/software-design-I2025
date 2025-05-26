@@ -1,4 +1,7 @@
 # Patrón: Prototype
+
+### Estudiante: Rolbin Castillo Matamoros B81771
+
 ### Definición del patrón y a qué tipo pertenece
 
 El Patrón Prototype es un patrón creacional que permite generar nuevos objetos mediante la copia (clonado) de un objeto existente, llamado prototipo, en lugar de instanciarlos directamente.
