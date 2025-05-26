@@ -1,10 +1,8 @@
 from iTutoria import iTutoria
-from abc import abstractmethod
 from copy import deepcopy
 
-class presencialTutoria(iTutoria):
-   
-    def __init__(self, title_tutoring, tutor_id, tutor, subject, date, start_time, description, method, capacity):
+class PresencialTutoria(iTutoria):
+    def __init__(self, title_tutoring, tutor_id, tutor, subject, date, start_time, description, capacity):
         self.title_tutoring = title_tutoring
         self.tutor_id = tutor_id
         self.tutor = tutor
@@ -15,6 +13,8 @@ class presencialTutoria(iTutoria):
         self.method = "Presencial"
         self.capacity = capacity
 
-
     def clone(self):
         return deepcopy(self)
+    
+    def __str__(self):
+        return f"Tutoría: {self.title_tutoring}, Tutor: {self.tutor}, Materia: {self.subject}, Método: {self.method}, Capacidad: {self.capacity}"
