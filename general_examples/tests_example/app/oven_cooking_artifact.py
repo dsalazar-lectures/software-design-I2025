@@ -8,6 +8,7 @@ class OvenArtifact(ICookingArtifact):
     def cook(self, minutes):
         print(f"Cooking for {minutes} minutes in the oven.")
         self.state = "cooked"
+        return f"Oven cooked for {minutes} min"
 
     def get_cooking_state(self):
         print("Getting cooking state from the oven.")
