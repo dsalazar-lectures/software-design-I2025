@@ -13,7 +13,7 @@ Template method define el "esqueleto" de un algoritmo mediante una clase abstrac
 
 Es de tipo "Behavioral" debido a que está enfocado en el flujo y la secuencia del comportamiento de un programa.
 
-Importante: La clase abstracta tiene un método que "templateMethod" que no se puede modificar, este es el que llama a las demás funciones, y de ser necesario, son estas otras funciones las que se modifican.
+Importante: La clase abstracta tiene un método "templateMethod" que no se puede modificar, este es el que llama a las demás funciones, y de ser necesario, son estas otras funciones las que se modifican.
 
 ![Template method, ejemplo](./readmeSrc/tmexample.png)
 
@@ -32,12 +32,29 @@ Template method es muy breve en cuanto a sus ventajas y desventajas.
 ### Ventajas
 
 * Evita la duplicación de código; el código que varía en cada subclase permanece en cada una.
-* Código reutilizableM; cómo trabajo con herencia, su funcionalidad es reutilizable.
+* Código reutilizableM; cómo trabaja con herencia, su funcionalidad es reutilizable.
 * Flexible; el patrón permite que las subclases decidan cómo implementar los pasos.
 
 ### Desventajas
 
 * Debido a que trabaja con herencia si alguna subclase por alguna razón no ocupa un paso que otras sí, este está obligado a implementarlo de igual forma.
+
+## Ejecutar
+
+Desde la raíz de la aplicación, directorio "template_method"
+Ejecutar main:
+
+* Make o make run
+
+Ejecutar pruebas:
+
+* Make test
+
+o manualmente
+
+* python app/main.py
+
+* pytest tests/test_build_house.py
 
 ## Referencias
 
