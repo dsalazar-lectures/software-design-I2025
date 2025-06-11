@@ -11,7 +11,6 @@ class FileProxy(FileInterface):
         """Display the file content, loading it if necessary."""
         if self.data is None:
             self.data = self._real_file.display()
-            self._is_loaded = True
         else:
             print("FileProxy::display(): File content already loaded. Displaying cached content...")
             print(f"Cached content: {self.data}")
