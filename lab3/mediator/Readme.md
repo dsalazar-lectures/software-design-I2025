@@ -45,3 +45,63 @@ El patrón Mediator resuelve este problema al:
 - El Mediator puede volverse una clase muy compleja si maneja demasiadas interacciones.  
 - Puede ocultar la lógica de negocio si no se organiza adecuadamente.  
 - Riesgo de sobreuso cuando no se requiere coordinación compleja.
+
+## Ejemplo práctico
+
+Para ilustrar el uso del patrón Mediator, se desarrolló una aplicación compuesta por:
+
+- Un frontend en **React** que contiene tres componentes: un campo de texto, un botón y una etiqueta de mensaje.
+- Un backend en **Flask (Python)** que simula el procesamiento del formulario y responde con mensajes de éxito o error.
+- Un objeto **Mediador** en el frontend que centraliza toda la interacción entre componentes, evitando que se comuniquen directamente entre sí.
+
+### ¿Cómo funciona?
+
+1. El usuario escribe su nombre en un campo de texto.
+2. El botón "Enviar" se activa solo si el campo contiene texto.
+3. Al presionar el botón, se envía el nombre al servidor Flask mediante `fetch`.
+4. El backend responde con un mensaje de confirmación o error.
+5. Todos los componentes se comunican a través de un objeto central `FormularioMediator`.
+
+Este enfoque demuestra cómo el patrón Mediator puede aplicarse eficazmente a interfaces gráficas desacoplando los componentes visuales y lógicos.
+
+## ¿Cómo ejecutar la aplicación?
+
+### 1. Prerequisitos
+
+- Tener instalado **Python 3** y **Node.js + npm**
+- Dentro de directorio raíz del patrón `.\mediator` cree un entorno virtual
+```bash
+python -m venv venv
+```
+
+- Active el entorno virtual
+```bash
+venv\Scripts\activate
+```
+
+- Instale las dependencias
+```bash
+pip install -r requirements.txt
+```
+
+- **Cuando desee terminar la prueba**, para desactivar el entorno virtual, ejecute:
+```bash
+deactivate
+```
+
+### 2. Compilar el backend
+
+- Correr la app
+```bash
+python app.py
+```
+
+### 3. Compilar el frontend
+
+- Abrir una nueva terminal
+- Desde la carpeta `.\frontend`:
+```bash
+npm start
+```
+Esto abrirá la aplicación en http://localhost:3000.
+
