@@ -2,6 +2,7 @@ from tests_example.app.i_cooking_artifact import ICookingArtifact
 
 class DummyArtifact(ICookingArtifact):
     def __init__(self):
+        self.temperature: 300
         self.cooked = False
 
     def cook(self, minutes):
@@ -10,3 +11,6 @@ class DummyArtifact(ICookingArtifact):
 
     def get_cooking_state(self):
         return "done" if self.cooked else "waiting"
+    
+    def set_cooking_temperature(self, temperature):
+        print(f"The temperature of the dummy has been set to {temperature}°")
