@@ -33,6 +33,7 @@ bin/
 *.exe
 *.out
 *.app
+*.vs
 
 # java
 *.class
