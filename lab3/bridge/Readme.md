@@ -105,13 +105,20 @@ Se desarrolló una aplicación que permite generar reportes de usuario en distin
 ```plaintext
 lab4/
 └── bridge/
-    ├── Main.java
-    ├── Report.java
-    ├── OutputFormat.java
-    ├── PlainTextOutputFormat.java
-    ├── HTMLOutputFormat.java
-    └── UserReport.java
-    └── FinanceReport.java
+    ├──src
+        ├── Main.java
+        ├── Report.java
+        ├── OutputFormat.java
+        ├── PlainTextOutputFormat.java
+        ├── HTMLOutputFormat.java
+        └── UserReport.java
+        └── FinanceReport.java
+    ├──testing
+        └── HTMLOutputFormatTest.java
+        └── UserReportTest.java
+    ├──lib
+        └── hamcrest-core-1.3.jar
+        └── junit-4.13.2.jar            
 
 ```
 
@@ -123,6 +130,12 @@ lab4/
 ==== Reporte de Usuario ====
 Nombre: Ana
 Email: ana@email.com
+
+=== Reporte Financiero Texto Plano ===
+==== Reporte Financiero ====
+Ingresos: $10000.00
+Egresos: $4500.00
+Balance: $5500.00
 ```
 
 ```html
@@ -130,6 +143,12 @@ Email: ana@email.com
 <h1>Reporte de Usuario</h1>
 <p><strong>Nombre:</strong> Ana</p>
 <p><strong>Email:</strong> ana@email.com</p>
+
+=== Reporte Financiero HTML ===
+<h1>Reporte Financiero</h1>
+<p><strong>Ingresos:</strong> $10000.00</p>
+<p><strong>Egresos:</strong> $4500.00</p>
+<p><strong>Balance:</strong> $5500.00</p>
 ```
 
 ## ¿Cómo se prueba el patrón Bridge?
@@ -174,9 +193,9 @@ public void testUserReportPlainText() {
     
 -   Un compilador (javac) y terminal configurada
 
-- crear el directorio lib en la raiz, a la altura de src y testing
+-   Crear el directorio lib en la raiz, a la altura de src y testing
 
-- Contar con las siguientes librerías en el directorio lib:
+- Contar con las siguientes librerías en el directorio lib (no se subieron al repo):
   - [JUnit 4.13.2](https://search.maven.org/remotecontent?filepath=junit/junit/4.13.2/junit-4.13.2.jar)
   - [Hamcrest Core 1.3](https://search.maven.org/remotecontent?filepath=org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar)
   
@@ -198,4 +217,6 @@ java -cp bin src.Main
 
 Verás los reportes generados en formato texto plano y HTML en la consola.
 
+### Testing:
 
+Si se utiliza visual studio o algún IDE los testing se ejecutaran automáticamente, de lo contrario se debe pasar las librerias de JUnit y Hamcrest desde la terminal. 

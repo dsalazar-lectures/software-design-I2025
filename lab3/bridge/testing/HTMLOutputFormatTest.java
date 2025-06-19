@@ -2,8 +2,8 @@ package testing;
 
 import static org.junit.Assert.assertEquals;
 import org.junit.Test;
-import src.OutputFormat;          // Importá la interfaz
-import src.HTMLOutputFormat;     // Importá la clase que implementa la interfaz
+import src.OutputFormat;
+import src.HTMLOutputFormat;
 
 public class HTMLOutputFormatTest {
 
