@@ -1,4 +1,6 @@
-class FinanceReport extends Report {
+package src;
+
+public class FinanceReport extends Report {
     private double ingresos;
     private double egresos;
 

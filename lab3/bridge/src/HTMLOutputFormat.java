@@ -1,4 +1,6 @@
-class HTMLOutputFormat implements OutputFormat {
+package src;
+
+public class HTMLOutputFormat implements OutputFormat {
     public String formatTitle(String title) {
         return "<h1>" + title + "</h1>\n";
     }

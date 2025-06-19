@@ -1,4 +1,6 @@
-abstract class Report {
+package src;
+
+public abstract class Report {
     protected OutputFormat format;
 
     public Report(OutputFormat format) {

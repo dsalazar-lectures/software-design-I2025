@@ -1,3 +1,5 @@
+package src;
+
 public class Main {
     public static void main(String[] args) {
         OutputFormat plain_text = new PlainTextOutputFormat();

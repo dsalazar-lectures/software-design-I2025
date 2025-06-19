@@ -1,4 +1,6 @@
-class PlainTextOutputFormat implements OutputFormat {
+package src;
+
+public class PlainTextOutputFormat implements OutputFormat {
     public String formatTitle(String title) {
         return "==== " + title + " ====\n";
     }

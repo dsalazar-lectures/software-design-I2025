@@ -1,4 +1,6 @@
-class UserReport extends Report {
+package src;
+
+public class UserReport extends Report {
     private String name;
     private String email;
 
