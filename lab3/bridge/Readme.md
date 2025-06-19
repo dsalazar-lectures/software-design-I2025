@@ -174,6 +174,8 @@ public void testUserReportPlainText() {
     
 -   Un compilador (javac) y terminal configurada
 
+- crear el directorio lib en la raiz, a la altura de src y testing
+
 - Contar con las siguientes librerías en el directorio lib:
   - [JUnit 4.13.2](https://search.maven.org/remotecontent?filepath=junit/junit/4.13.2/junit-4.13.2.jar)
   - [Hamcrest Core 1.3](https://search.maven.org/remotecontent?filepath=org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar)
