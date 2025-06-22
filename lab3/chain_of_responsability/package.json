@@ -1,0 +1,22 @@
+{
+  "name": "chain-of-responsibility-demo",
+  "version": "1.0.0",
+  "description": "Demostración del patrón de diseño Chain of Responsibility",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "ts-node src/index.ts"
+  },
+  "keywords": [
+    "design-pattern",
+    "chain-of-responsibility",
+    "typescript"
+  ],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "ts-node": "^10.9.1",
+    "typescript": "^5.0.4"
+  }
+}
