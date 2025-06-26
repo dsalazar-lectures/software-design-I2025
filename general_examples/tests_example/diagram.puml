@@ -1,0 +1,49 @@
+@startuml CookingDiagram
+
+interface ICookingService {
+    + cook_recipe(minutes: int): str
+    + get_cooking_state(): str
+}
+
+interface ICookingArtifact {
+    + cook(minutes: int): str
+    + get_cooking_state(): str
+}
+
+class MockCookingService {
+    - last_minutes: int
+    - state: str
+    - recipe: Recipe
+    + cook_recipe(minutes: int): str
+    + get_cooking_state(): str
+}
+
+class Recipe {
+    - artifacts: List[ICookingArtifact]
+    + cook_all(minutes: int)
+    + get_all_states(): List[str]
+}
+
+class OvenArtifact {
+    + cook(minutes: int): str
+    + get_cooking_state(): str
+}
+
+class AirFryerArtifact {
+    + cook(minutes: int): str
+    + get_cooking_state(): str
+}
+
+class DummyArtifact {
+    + cook(minutes: int): str
+    + get_cooking_state(): str
+}
+
+ICookingService <|.. MockCookingService
+ICookingArtifact <|.. OvenArtifact
+ICookingArtifact <|.. AirFryerArtifact
+ICookingArtifact <|.. DummyArtifact
+Recipe o-- ICookingArtifact
+MockCookingService o-- Recipe
+
+@enduml
