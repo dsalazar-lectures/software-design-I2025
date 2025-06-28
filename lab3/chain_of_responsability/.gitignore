@@ -1,0 +1,46 @@
+# Dependencias
+node_modules/
+package-lock.json
+yarn.lock
+
+# Archivos compilados
+dist/
+build/
+*.tsbuildinfo
+
+# Archivos de entorno
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Archivos de log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+logs/
+*.log
+
+# Archivos de sistema operativo
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Archivos de IDE y editores
+.idea/
+.vscode/
+*.swp
+*.swo
+.history/
+*.sublime-project
+*.sublime-workspace
+
+# Archivos de cobertura
+coverage/
+.nyc_output/
+
+# Otros
+.cache/
+tmp/
+temp/
